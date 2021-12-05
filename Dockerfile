@@ -1,7 +1,8 @@
 FROM ubuntu:18.04
+FROM python:3.8.10
+
 ENTRYPOINT []
 
-RUN pip3 install --upgrade pip
 
 RUN apt-get update && apt-get install -y python3 python3-pip && python3 -m pip install --no-cache --upgrade pip
 
